@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 //             .catch(err => console.log(err))
 
 const db = mongoose.connection;
-const init = () => {
+const dbConnect = () => {
     mongoose.connect('mongodb://feralbuddleia:mlab12345@ds139334.mlab.com:39334/netflix')
 }
 db.once("open",()=> console.log('MongoDB connected'));
