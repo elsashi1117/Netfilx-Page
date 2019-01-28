@@ -7,7 +7,6 @@ import './style.css';
 
 class MovieBox extends Component {
 
-
     componentDidMount() {
         this.props.dispatch(actions.getMovie())
         // console.log('componentDidMount')
@@ -21,8 +20,7 @@ class MovieBox extends Component {
     render() {
         console.log(this.props.flag)
         const {flag,alter,button} = this.props
-        return (
-            
+        return (          
                 <div className='container'>
                     {this.props.movies.data.map(mv =>
                     
@@ -33,7 +31,6 @@ class MovieBox extends Component {
                         </div>
                     )}
                 </div>
-
         )
     }
 }
