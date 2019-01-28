@@ -13,13 +13,6 @@ const requestMovieSuccess = res => {
     };
 }
 
-// const requestOneMovieSuccess = res => {
-//     return {
-//         type : 'ONE_MOVIE_FETCH_SUCCESS',
-//         data : res.data,
-//     };
-// }
-
 const requestMovieFail = err => {
     return {
         type : 'MOVIE_FETCH_FAIL',
