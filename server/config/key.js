@@ -10,4 +10,4 @@ const dbConnect = () => {
     mongoose.connect('mongodb://feralbuddleia:mlab12345@ds139334.mlab.com:39334/netflix')
 }
 db.once("open",()=> console.log('MongoDB connected'));
-module.exports = init;
+module.exports = dbConnect;
