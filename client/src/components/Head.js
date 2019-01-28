@@ -5,7 +5,6 @@ const Header = () => {
     return (
         <div className='header'>
             <img className='logo' src='https://ya-webdesign.com/images/netflix-n-logo-png-4.png' />
-
         </div>
     )
 }
